@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;    
+            height: 100vh;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .item1 {
+            width: 300px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+            flex-shrink: 1; /* Valor padrão */
+        }
+        .item2 {
+            width: 300px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            flex-shrink: 2; /* Maior capacidade de encolhimento */
+        }
+        .item3 {
+            width: 300px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 10px;
+            flex-shrink: 0; /* Sem encolhimento */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item1">Item 1</div>
+            <div class="item2">Item 2</div>
+            <div class="item3">Item 3</div>
+        </div>
+        <h4>Com diferentes valores e flex:shrink para cada item, o item 3 não encolhe com o reajuste de tamanho da página, o item 2 é o que mais encolhe ao tamanho da pagina diminuir, e o item 1 encolhe em uma proporção menor que o 2. </h4>
+    </main>
+    
+</body>
+</html>

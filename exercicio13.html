@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+    <style>
+        .outer-container{
+            display:flex;
+            flex-direction: column;
+        }
+        .inner-container{
+            display:flex;
+            flex-direction: row;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+            </div>
+            <div class="item">Item 3</div>          
+        </div>
+        <h4>O aninhamento de containers faz com que os items 1 e 2 fiquem alinhados de maneira diferente, lado a lado, enquanto o item 3, que está separado deles, fica embaixo.</h4>
+    </main>
+    
+</body>
+</html>

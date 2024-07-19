@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        .item:first-child{
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h4>Com o uso do align-self: flex-end no item 1, ele fica posicionado no canto direito (final) da posição em que o flex está configurado. </h4>
+    </main>
+    
+</body>
+</html>

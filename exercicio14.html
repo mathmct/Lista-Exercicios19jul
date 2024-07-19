@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+    <style>
+        .outer-container{
+            display:flex;
+            flex-direction: column;
+        }
+        .inner-container{
+            display:flex;
+            flex-direction: row;
+        }
+        .item{
+            background-color: lightcoral;
+            margin: 10px;
+            flex: 1 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+            </div>
+            <div class="item">Item 3</div>          
+        </div>
+        <h4>As definições de tamanho do flex fizeram com que eles tivessem um tamanho fixo de 100px, tivessem um valor de crescimento que se ajustasse ao tamanho da tela, porém não encolhem de forma que ao reduzir muito a tela, todos os itens caibam nela.</h4>
+    </main>
+    
+</body>
+</html>

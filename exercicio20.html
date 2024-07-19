@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .item{
+            background-color: lightcoral;
+            margin: 10px;
+            flex: 1 1 200px;
+            align-self: stretch;
+        }
+        .item:nth-child(2){
+            flex-grow: 2;
+        }
+        .item:nth-child(4){
+            order: -1;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+        <h4>O item 4 passou a ser posicionado primeiro na ordem, tendo um tamanho maior que os outros (300px). Os outros itens tem todos 200px, porém o item 2 tem o atribuito de crescimento conforme a página aumenta dobrado, crescendo mais que os outros. Todos os itens estão alinhados no flex por coluna, espaçadas igualmente, e ao centro do eixo. </h4>
+    </main>
+    
+</body>
+</html>

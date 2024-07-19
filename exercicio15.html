@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+
+        }
+        .item {
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        .item:nth-child(1){
+            flex: 2 1 200px;
+
+        }
+        .item:nth-child(2){
+            flex: 1 1 100px;
+        }
+        .item:nth-child(3){
+            flex: 1 2 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h4>Cada item está com propriedades diferentes de crescimento, encolhimento e tamanho. O item 1 é o maior, e tem o dobro de crescimento ao aumentar a página. O item 2 tem o menor tamanho, e padrões de crescimento e encolhimento normal. O item 3 tem tamanho intermediário, e é o que mais encolhe quando a pagina diminui. </h4>
+    </main>
+    
+</body>
+</html>
